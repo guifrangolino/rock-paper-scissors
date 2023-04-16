@@ -34,8 +34,6 @@ function App() {
   function generateHouseChoice() {
     const choices = ['rock', 'paper', 'scissors']
     const choicesTbbt = ['rock', 'paper', 'scissors', 'lizard', 'spock']
-    // setHouseChoice(choices[Math.floor(Math.random() * choices.length)])
-    // tbbtMode === true && setHouseChoice(choicesTbbt[Math.floor(Math.random() * choicesTbbt.length)])
     if (tbbtMode === true) {
       setHouseChoice(choicesTbbt[Math.floor(Math.random() * choicesTbbt.length)])
     } else {
@@ -44,6 +42,7 @@ function App() {
   }
 
   function validateChoice() {
+    setWinner('')
     if (playerChoice === 'rock' && (houseChoice === 'scissors' || houseChoice === 'lizard')) {
       setResult('win')
       setTimeout(() => {

@@ -77,7 +77,6 @@ const winnerShadowMobile = keyframes`
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  min-height: 100lvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,7 +390,6 @@ export const HousePick = styled.div`
     border-radius: 50%;
     position: relative;
     animation: ${scaleFowardBack} 1s linear infinite;
-    /* display: none; */
 
     @media (max-width: 950px) {
       width: 130px;
@@ -545,7 +543,6 @@ export const RulesContainer = styled.div`
   align-items: center;
   justify-content: center;
   display: none;
-  /* padding: 30px; */
 
   &.open {
     display: flex;
