@@ -82,7 +82,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  gap: 50px;
+  gap: 20px;
   position: relative;
 `
 
@@ -156,7 +156,7 @@ export const ChoiceContainer = styled.div`
   animation: ${entrance} 1s ease 0s 1 normal forwards;
 
   @media (max-width: 950px) {
-    max-width: 375px;
+    max-width: 320px;
   }
 
   &.tbbt-mode {
@@ -214,8 +214,8 @@ export const ChoiceButton = styled.button`
   }
 
   @media (max-width: 950px) {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
   }
 
   &.winner {
@@ -246,7 +246,7 @@ export const ChoiceButton = styled.button`
       grid-area: sci;
       margin: auto;
       position: relative;
-      top: 20px;
+      top: 30px;
     }
   }
 
@@ -257,6 +257,7 @@ export const ChoiceButton = styled.button`
     &.tbbt-mode {
       filter: drop-shadow(0px 5px 0px ${shade(0.1, 'hsl(349, 71%, 52%)')});
       grid-area: rock;
+      margin-left: 5px;
     }
   }
 
@@ -268,6 +269,7 @@ export const ChoiceButton = styled.button`
       filter: drop-shadow(0px 5px 0px ${shade(0.1, 'hsl(261, 73%, 60%)')});
       grid-area: liz;
       margin-left: auto;
+      margin-right: 5px;
     }
   }
 
