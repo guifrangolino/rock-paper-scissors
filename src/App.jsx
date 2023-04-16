@@ -235,7 +235,7 @@ function App() {
         </HousePick>
       </ResultContainer>
 
-      <ModeButton>
+      <ModeButton className={`${choiceMade === true && 'hidden'}`}>
         <span>TBBT Mode</span>
         <Switch 
           onChange={() => {

@@ -76,14 +76,15 @@ const winnerShadowMobile = keyframes`
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
-  height: 100lvh;
+  min-height: 100vh;
+  min-height: 100lvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   gap: 50px;
+  position: relative;
 `
 
 export const Header = styled.header`
@@ -496,11 +497,17 @@ export const ModeButton = styled.div`
   position: absolute;
   bottom: 10px;
   left: 10px;
+  margin-bottom: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  animation: ${entranceScale} 1s ease 0s 1 normal forwards;
+
+  &.hidden {
+    display: none;
+  }
 
   span {
     text-transform: uppercase;
@@ -522,10 +529,6 @@ export const RulesButton = styled.button`
   cursor: pointer;
   transition: all .2s;
   margin-left: auto;
-
-  @media (max-width: 950px) {
-    /* margin-left: 0; */
-  }
 
   &:hover {
     background: #FFF;
