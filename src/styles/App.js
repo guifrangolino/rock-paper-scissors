@@ -354,7 +354,7 @@ export const PlayerPick = styled.div`
     }
     
     &:hover {
-      /* filter: brightness(100%); */
+      opacity: 1;
     }
   }
 
@@ -422,7 +422,7 @@ export const HousePick = styled.div`
     }
 
     &:hover {
-      /* filter: brightness(100%); */
+      opacity: 1;
     }
   }
 
