@@ -179,7 +179,7 @@ function App() {
   return (
     <Container>
       <Header>
-        <img src="/images/logo.svg" alt="Rock Paper Scissors Logo" />
+        <img src={tbbtMode === true ? '/images/logo-bonus.svg' : '/images/logo.svg'} alt="Rock Paper Scissors Logo" />
         <ScoreContainer>
           <span>Score</span>
           <span className="score">{score}</span>
